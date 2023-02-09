@@ -12,4 +12,3 @@ This directory contains all the microservices in the system
 ### Other modules
 
 1. Base domain
-
