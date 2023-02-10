@@ -20,6 +20,7 @@
     <module>microservices/order-microservice</module>
     <module>microservices/base-domain</module>
     <module>microservices/accounting-microservice</module>
+    <module>microservices/warehouse-microservice</module>
   </modules>
   <properties>
     <encoding>UTF-8</encoding>
