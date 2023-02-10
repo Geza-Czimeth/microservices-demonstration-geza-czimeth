@@ -7,6 +7,7 @@ The project has several parts:
 - postman test file
 
 ### How to test
+First start up infrastructure elements
 
 ### What to expect
 
@@ -23,14 +24,18 @@ Calling the microservices can be done directly or though the API gateway.
 - Mapping libraries usage
 - Validation on request(uses custom error/exception handler)
 - Customized Error handling
-- SQL data storage with JPA
-- ResTemplate usage to send messages to Broker
-- Centralised cloud config
-- Auto refresh(?S16)
+
+- RabbitMQ topic with several subscribers
+- ResTemplate/RabbitTemplate usage to send messages to Broker
+
+- Centralised cloud config -->Last phase
+  - Auto refresh(?S16)
+
+
 - Distributed log collection?
 - Resillience(retry implementation with fallback)
-- Dockerised application/Docker compose also
-- RabbitMQ topic with several subscribers
-- Dockerised rabbmit/mysql setup
-- Distributed tracing with zipkin(?)
+- Dockerised application/Docker compose also --> Last phase
+- SQL data storage with JPA --> Last phase
+- Dockerised rabbmit/mysql setup --> always is
+- Distributed tracing with zipkin(?) --> always is
  (https://github.com/micrometer-metrics/tracing/wiki/Spring-Cloud-Sleuth-3.1-Migration-Guide)
