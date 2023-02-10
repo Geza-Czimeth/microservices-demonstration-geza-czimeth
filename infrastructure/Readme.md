@@ -22,3 +22,20 @@ Management interface: http://localhost:15672/
 username: guest
 password: guest
 </pre>
+
+### Mysql Db setup
+
+<pre>
+docker run --name some-mysql5 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d -p 3306:3306 mysql
+</pre>
+
+After that connect with intellij Database view
+<pre>
+using username:root
+passowrd: my-secret-pw
+</pre>
+and run the content of the
+<pre>
+database/db.script
+</pre>
+to create the necessary structure.
