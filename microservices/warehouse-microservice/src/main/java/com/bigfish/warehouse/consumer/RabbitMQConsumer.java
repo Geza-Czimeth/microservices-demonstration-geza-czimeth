@@ -1,4 +1,4 @@
-package com.bigfish.accounting.consumer;
+package com.bigfish.warehouse.consumer;
 
 import com.bigfish.entity.Order;
 import lombok.extern.slf4j.Slf4j;
@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class RabbitMQConsumer {
 
-    @RabbitListener(queues = "${rabbitmq.accounting.queue.json.name}")
+    @RabbitListener(queues = "${rabbitmq.warehouse.queue.json.name}")
     public void consume(Order order){
-        log.info("Message received in accounting microservice: "+ order);
+        log.info("Message received in warehouse microservice: "+ order);
     }
 }

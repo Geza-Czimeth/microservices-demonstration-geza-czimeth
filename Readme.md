@@ -39,3 +39,4 @@ Calling the microservices can be done directly or though the API gateway.
 - Dockerised rabbmit/mysql setup --> always is
 - Distributed tracing with zipkin(?) --> always is
  (https://github.com/micrometer-metrics/tracing/wiki/Spring-Cloud-Sleuth-3.1-Migration-Guide)
+- all configuration is extracted out to cloud config
