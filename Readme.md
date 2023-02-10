@@ -33,6 +33,7 @@ Calling the microservices can be done directly or though the API gateway.
 - Centralised cloud config -->Last phase
     - Auto refresh(?S16)
     - all configuration is extracted out to cloud config
+      - currently configuration files stored of this repo root for simplification
   
 - Distributed log collection?
 - Resillience(retry implementation with fallback)
