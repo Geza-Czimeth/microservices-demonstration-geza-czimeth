@@ -19,6 +19,7 @@
     <module>infrastructure/cloud-config-server</module>
     <module>microservices/order-microservice</module>
     <module>microservices/base-domain</module>
+    <module>microservices/accounting-microservice</module>
   </modules>
   <properties>
     <encoding>UTF-8</encoding>
