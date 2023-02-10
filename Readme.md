@@ -21,7 +21,7 @@ Calling the microservices can be done directly or though the API gateway.
 
 - Rest interface to submit order(through API gateway)
 - Mapping libraries usage
-- Validation on request
+- Validation on request(uses custom error/exception handler)
 - Customized Error handling
 - SQL data storage with JPA
 - ResTemplate usage to send messages to Broker
