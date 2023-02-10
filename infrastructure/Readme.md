@@ -36,6 +36,6 @@ passowrd: my-secret-pw
 </pre>
 and run the content of the
 <pre>
-database/db.script
+mysql_database/*.script
 </pre>
 to create the necessary structure.

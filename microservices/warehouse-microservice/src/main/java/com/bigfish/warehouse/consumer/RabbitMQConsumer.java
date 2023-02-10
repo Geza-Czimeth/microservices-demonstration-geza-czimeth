@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 public class RabbitMQConsumer {
 
     private WarehouseRepository warehouseRepository;
+
     @RabbitListener(queues = "${rabbitmq.warehouse.queue.json.name}")
     public void consume(Order order){
         log.info("Message received in warehouse microservice: "+ order);
