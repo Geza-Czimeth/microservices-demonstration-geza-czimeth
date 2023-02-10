@@ -1,4 +1,4 @@
-package com.bigfish.order.config;
+package com.bigfish.accounting.config;
 
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
@@ -12,37 +12,27 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMQConfig {
 
-    @Value("${rabbitmq.warehouse.queue.json.name}")
-    private String wareHouseQueueName;
     @Value("${rabbitmq.accounting.queue.json.name}")
-    private String accountingQueueName;
+    private String queueName;
+
     @Value("${rabbitmq.exchange.name}")
-    private String exchange;
-    @Value("${rabbitmq.routing.key.json}")
+    private String exchangeName;
+
+    @Value("${rabbitmq.accounting.routing.key.json}")
     private String routingKey;
 
     @Bean
-    public Queue warehouseQueue(){
-        return new Queue(wareHouseQueueName);
-    }
-
-    @Bean
-    public Queue accountingQueue(){
-        return new Queue(accountingQueueName);
+    public Queue queue(){
+        return new Queue(queueName);
     }
     @Bean
     public TopicExchange exchange(){
-        return new TopicExchange(exchange);
+        return new TopicExchange(exchangeName);
     }
 
     @Bean
-    public Binding accountingBinding(){
-        return BindingBuilder.bind(accountingQueue()).to(exchange()).with(routingKey);
-    }
-
-    @Bean
-    public Binding warehouseBinding(){
-        return BindingBuilder.bind(warehouseQueue()).to(exchange()).with(routingKey);
+    public Binding binding(){
+        return BindingBuilder.bind(queue()).to(exchange()).with(routingKey);
     }
 
     @Bean

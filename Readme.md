@@ -26,15 +26,16 @@ Calling the microservices can be done directly or though the API gateway.
 - Customized Error handling
 
 - RabbitMQ topic with several subscribers
-- ResTemplate usage to send messages to Broker
-- 
-- Centralised cloud config -->Last phase
-- SQL data storage with JPA --> Last phase
+- ResTemplate/RabbitTemplate usage to send messages to Broker
 
-- Auto refresh(?S16)
+- Centralised cloud config -->Last phase
+  - Auto refresh(?S16)
+
+
 - Distributed log collection?
 - Resillience(retry implementation with fallback)
-- Dockerised application/Docker compose also
-- Dockerised rabbmit/mysql setup
-- Distributed tracing with zipkin(?)
+- Dockerised application/Docker compose also --> Last phase
+- SQL data storage with JPA --> Last phase
+- Dockerised rabbmit/mysql setup --> always is
+- Distributed tracing with zipkin(?) --> always is
  (https://github.com/micrometer-metrics/tracing/wiki/Spring-Cloud-Sleuth-3.1-Migration-Guide)
