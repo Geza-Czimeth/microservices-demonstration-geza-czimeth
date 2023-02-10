@@ -28,3 +28,7 @@ This directory contains all the microservices in the system
 ### What is being demonstrated at Warehouse microservice
 - RabbitMQ integration
   - Receiving Json message from RabbitMQ and automatically converting to Object
+- JPA Spring integration
+  - MySql database is used to store warehouse order records
+    - [Link](https://github.com/Geza-Czimeth/microservices-demonstration-geza-czimeth/blob/f1cdcf0a41f4419ac0a9b98137acb22e3851b1db/microservices/warehouse-microservice/src/main/java/com/bigfish/warehouse/persistence/WarehouseRepository.java#L6)
+    - [Consume from JMS and store](https://github.com/Geza-Czimeth/microservices-demonstration-geza-czimeth/blob/f1cdcf0a41f4419ac0a9b98137acb22e3851b1db/microservices/warehouse-microservice/src/main/java/com/bigfish/warehouse/consumer/RabbitMQConsumer.java#L19)
