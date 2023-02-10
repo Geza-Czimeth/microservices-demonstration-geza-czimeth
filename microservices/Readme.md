@@ -23,4 +23,4 @@ This directory contains all the microservices in the system
 
 ### What is being demonstrated at Accounting microservice
 - RabbitMQ integration
-  - Receiving Json message from RabbitMQ
+  - Receiving Json message from RabbitMQ and automatically converting to Object
