@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "f91dbbd1-5ae9-4b99-acab-494f08bcc393",
+		"name": "microservices-demonstration-geza-czimeth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25039163"
+	},
+	"item": [
+		{
+			"name": "Order service",
+			"item": [
+				{
+					"name": "Test if order service is up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"product\": \"tv\",\r\n    \"quantity\": 123\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
