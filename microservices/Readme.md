@@ -19,3 +19,5 @@ This directory contains all the microservices in the system
 - Request validation(https://beanvalidation.org/)
 - Customized Validation Error handling(ExceptionHandler.class)
 - Customized Exception handling(ExceptionHandler.class)
+- RabbitMQ integration
+  - Sending Json message to RabbitMQ
