@@ -12,4 +12,6 @@ public class OrderDto{
     private  String product;
     @NotNull
     private  Integer quantity;
+    @NotNull
+    private Double price;
 }
