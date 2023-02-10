@@ -22,7 +22,7 @@ public class OrderServiceController {
     private ModelMapper modelMapper;
     private OrderService orderService;
 
-    @PostMapping()
+    @PostMapping
     public ResponseEntity<OrderDto> order(@RequestBody @Valid OrderDto orderDto) {
         log.info(String.format("Order service received order -> %s", orderDto));
         Order order = modelMapper.map(orderDto, Order.class);
