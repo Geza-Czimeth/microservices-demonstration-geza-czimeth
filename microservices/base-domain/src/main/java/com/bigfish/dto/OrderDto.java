@@ -1,6 +1,7 @@
 package com.bigfish.dto;
 
-public class OrderDto {
-    public String product;
-    public int quantity;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
+public record OrderDto(@NotNull @NotEmpty String product, @NotNull Integer quantity) {
 }
