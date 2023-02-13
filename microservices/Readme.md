@@ -7,9 +7,9 @@ This directory contains all the microservices in the system
 1. Order microservice
    - receives orders though Rest interface(test it with postman file)
 2. Accounting microservice
-   - read order messages from RabbitMQ
+   - reads order messages from RabbitMQ
 3. Warehouse microservice
-   - read order messages from RabbitMQ
+   - reads order messages from RabbitMQ
 
 ### Other modules
 
