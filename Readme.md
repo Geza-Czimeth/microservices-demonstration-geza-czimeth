@@ -30,7 +30,7 @@ Calling the microservices can be done directly or though the API gateway.
 
 - SQL data storage with JPA
 
-- Centralised cloud config -->Last phase
+- Centralised cloud config
     - Auto refresh(?S16)
     - all configuration is extracted out to cloud config
       - currently configuration files stored of this repo root for simplification
@@ -42,3 +42,8 @@ Calling the microservices can be done directly or though the API gateway.
 - Dockerised rabbmit/mysql setup --> always is
 - Distributed tracing with zipkin(?) --> always is
  (https://github.com/micrometer-metrics/tracing/wiki/Spring-Cloud-Sleuth-3.1-Migration-Guide)
+
+Possible improvements
+- Dockerise everything into a docker-compose setup
+- implement api gateway service
+- 
