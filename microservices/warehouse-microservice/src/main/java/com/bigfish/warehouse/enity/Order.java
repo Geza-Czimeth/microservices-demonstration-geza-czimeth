@@ -1,4 +1,4 @@
-package com.bigfish.entity;
+package com.bigfish.warehouse.enity;
 
 import jakarta.persistence.*;
 import lombok.Data;

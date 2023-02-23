@@ -1,7 +1,7 @@
 package com.bigfish.order.controller;
 
 import com.bigfish.dto.OrderDto;
-import com.bigfish.entity.Order;
+import com.bigfish.order.model.Order;
 import com.bigfish.order.service.OrderService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;

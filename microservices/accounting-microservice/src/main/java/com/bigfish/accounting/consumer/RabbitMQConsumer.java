@@ -1,6 +1,6 @@
 package com.bigfish.accounting.consumer;
 
-import com.bigfish.entity.Order;
+import com.bigfish.accounting.model.Order;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;

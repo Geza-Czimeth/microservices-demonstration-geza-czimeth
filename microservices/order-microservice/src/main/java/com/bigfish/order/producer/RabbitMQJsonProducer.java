@@ -1,6 +1,6 @@
 package com.bigfish.order.producer;
 
-import com.bigfish.entity.Order;
+import com.bigfish.order.model.Order;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Value;
