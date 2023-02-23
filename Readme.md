@@ -7,7 +7,9 @@ The project has several parts:
 - postman test file
 
 ### How to test
-First start up infrastructure elements, see infrastructure directory
+- First start up infrastructure elements, see infrastructure directory.
+- Then start up the microservices, see microservices directory.
+- Then use postman file <pre>assets/postman/microservices-demonstration-geza-czimeth.postman_collection.json</pre> to test the application.
 
 ### What to expect
 
