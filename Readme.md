@@ -17,6 +17,9 @@ Calling the microservices can be done directly or though the API gateway.
 ### Architecture
 ![Architecture](/assets/images/architecture.png)
 
+### System messaging sequence
+![Architecture](/assets/images/general_use_case_sequence_diagram.png)
+
 
 ### Planned feature list
 
