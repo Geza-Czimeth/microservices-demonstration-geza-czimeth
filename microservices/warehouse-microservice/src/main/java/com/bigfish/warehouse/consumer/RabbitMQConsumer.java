@@ -1,6 +1,6 @@
 package com.bigfish.warehouse.consumer;
 
-import com.bigfish.entity.Order;
+import com.bigfish.warehouse.enity.Order;
 import com.bigfish.warehouse.persistence.WarehouseRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
