@@ -5,7 +5,8 @@ This directory contains all the microservices in the system
 ### List of microservices
 
 1. Order microservice
-   - receives orders though Rest interface(test it with postman file)
+   - receives orders though Rest interface
+   - sends accepted order to RabbitMQ
 2. Accounting microservice
    - reads order messages from RabbitMQ
 3. Warehouse microservice
@@ -24,8 +25,8 @@ This directory contains all the microservices in the system
 - Spring JPA integration usage in [RabbitMQConsumer](https://github.com/Geza-Czimeth/microservices-demonstration-geza-czimeth/blob/cb00a0430c1eb4c88524fef69381965b752494ac/microservices/warehouse-microservice/src/main/java/com/bigfish/warehouse/consumer/RabbitMQConsumer.java#L20)
 - Automated Mapping libraries usage [OrderServiceController ](https://github.com/Geza-Czimeth/microservices-demonstration-geza-czimeth/blob/cb00a0430c1eb4c88524fef69381965b752494ac/microservices/order-microservice/src/main/java/com/bigfish/order/controller/OrderServiceController.java#L28)(https://modelmapper.org/)
 - Request validation [OrderServiceController](https://github.com/Geza-Czimeth/microservices-demonstration-geza-czimeth/blob/cb00a0430c1eb4c88524fef69381965b752494ac/microservices/order-microservice/src/main/java/com/bigfish/order/controller/OrderServiceController.java#L26) (https://beanvalidation.org/)
-- Customized Validation Error handling([GlobalExceptionHandler](https://github.com/Geza-Czimeth/microservices-demonstration-geza-czimeth/blob/phase1/microservices/order-microservice/src/main/java/com/bigfish/order/exception/GlobalExceptionHandler.java))
-- Customized Exception handling ([GlobalExceptionHandler](https://github.com/Geza-Czimeth/microservices-demonstration-geza-czimeth/blob/phase1/microservices/order-microservice/src/main/java/com/bigfish/order/exception/GlobalExceptionHandler.java))
+- Customized Validation Error handling([GlobalExceptionHandler](https://github.com/Geza-Czimeth/microservices-demonstration-geza-czimeth/blob/4d5d9d261aecf032cfc8b24803e4438d34222055/microservices/order-microservice/src/main/java/com/bigfish/order/exception/GlobalExceptionHandler.java#L32))
+- Customized Exception handling ([GlobalExceptionHandler](https://github.com/Geza-Czimeth/microservices-demonstration-geza-czimeth/blob/4d5d9d261aecf032cfc8b24803e4438d34222055/microservices/order-microservice/src/main/java/com/bigfish/order/exception/GlobalExceptionHandler.java#L25))
 
 - Spring cloud configuration usage
 - JPA Spring integration
